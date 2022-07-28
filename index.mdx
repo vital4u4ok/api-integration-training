@@ -1,0 +1,60 @@
+---
+title: Demo API Portal
+---
+
+import {
+  LandingLayout,
+  Button,
+  Box,
+  FlexSection,
+  Flex,
+  Jumbotron,
+  ThinTile,
+  WideTile,
+  Emphasis,
+  H1,
+  H2,
+  SectionHeader,
+  NavBar,
+} from '@redocly/developer-portal/ui';
+
+import icon1 from './images/icon1.png';
+import launchFastIcon from './images/launch-fast.svg';
+import icon3 from './images/icon3.png';
+import bookManagementIcon from './images/book-management.svg';
+import foundOrPrivate from './images/found-or-private.svg';
+
+export default LandingLayout;
+
+<Jumbotron>
+  <NavBar location={props.location} standalone={false} />
+  <H1>API integration training</H1>
+  <Flex p={20} justifyContent="center">
+     <Button variant="outlined" size="xlarge" to="developer-portal/welcome.md">
+      My APIs
+    </Button>
+  </Flex>
+</Jumbotron>
+<Box my={25}>
+  <FlexSection justifyContent="space-around" flexWrap="wrap">
+    <ThinTile to="developer-portal/welcome.md" icon={icon1} header="Rock">
+        Lorem ipsum dolor sit amet, pri putent oportere quaerendum in, ea mea justo invenire
+        aliquando. Usu modo suavitate ea. Et sed labitur epicurei adipiscing. Nibh zril labitur
+        an usu.Lorem ipsum dolor sit amet, pri putent oportere quaerendum in, ea mea justo
+        invenire aliquando. Usu modo suavitate ea. Et sed labitur epicurei adipiscing. Nibh zril
+        labitur an usu.Lorem ipsum dolor sit amet, pri putent oportere quaerendum in, ea mea
+        justo invenire aliquando. Usu modo suavitate ea. Et sed labitur epicurei adipiscing.
+    </ThinTile>
+    <ThinTile to="developer-portal/welcome.md" icon={launchFastIcon} header="Paper">
+        Lorem ipsum dolor sit amet, pri putent oportere quaerendum in, ea mea justo invenire
+        aliquando. Usu modo suavitate ea. Et sed labitur epicurei adipiscing. Nibh zril labitur
+        an usu.
+    </ThinTile>
+    <ThinTile to="developer-portal/welcome.md" icon={icon3} header="Scissors">
+        Lorem ipsum dolor sit amet, pri putent oportere quaerendum in, ea mea justo invenire
+        aliquando. Usu modo suavitate ea. Et sed labitur epicurei adipiscing. Nibh zril labitur
+        an usu.
+    </ThinTile>
+  </FlexSection>
+</Box>
+
